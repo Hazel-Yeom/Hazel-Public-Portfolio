@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS Home</title>
+    
+    <!-- External CSS Libraries -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="/static/main_business_insight/navigation.css">
+
+    <!-- External JS Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Local JS -->
+    <script src="/static/main_business_insight/navigation.js"></script>
+
+</head>
+
+
+
+
+
+
+
+<body>
+<!-- page title -->
+  <div class="top-bar con-min-width">
+    <div class="con flex height-100p">
+      <a href="#" class="logo flex flex-ai-c" style="font-size: 30px; font-family: 'Gabarito';">
+        DS Home
+      </a>
+
+<!-- top navigation bar -->
+      <div class="flex-grow-1"></div>
+      <nav class="menu-box-1">
+        <ul class="flex height-100p">
+          <li>
+            <a href="#" class="height-100p flex flex-ai-c">ABOUT</a>
+          </li>
+          <li>
+            <a href="#" class="height-100p flex flex-ai-c">PORTFOLIO</a>
+          <li>
+            <a href="#" class="height-100p flex flex-ai-c">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="https://www.linkedin.com/in/jimin-yeom-hayzel/en" class="btn-linkedin flex flex-as-c flex-ai-c"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+  </div>
+  
+
+
+
+
+
+<!-- top banner -->
+  <div class="top-banner-box-1 con-min-width">
+    <div class="bg"></div>
+    <div class="con relative">
+      <div class="txt-box">
+        <h1>
+          Django Demo Product
+          <br>
+          by Jimin Yeom
+        </h1>
+        <h2>
+          Spherehead the data driven insights together.
+          <br>
+          Dive deep to uncover the tools and insights that can elevate your business strategy.
+          <br>
+          <br>
+          <br>
+        </h2>
+      </div>
+    </div>
+    <div class="con img-box">
+
+
+
+<!-- dynamic reference -->
+    {% block content %}
+    {% endblock %}
+    <br>
+    <br>
+      <div class="top-banner-box-type-1-between-pad"></div>
+  </div>
+</div>
+
+
+
+
+
+<!-- portfolio 1 -->
+  <div class="top-banner-box-2 top-banner-box-type-1 con">
+    <div>
+          <div class="txt-box">
+            <h1>
+              NOTAM NLP and Criticality Score
+            </h1>
+              <h2>
+                Georgia Tech Practicum sponsored by IATA
+              </h2>
+            <div class="des">
+              The project aims to enhance the readability of NOTAMs by translating them into plain English. 
+              NOTAM stants for Notice to Air Men, which are vital for flight safety but can be hard to comprehend due to abbreviations.
+              The quality of this machine translation can be evaluated via BLEU score.
+              <br>
+            </div>
+            
+            <div class="btn-box">
+              <a href="https://www.iata.org/">
+                <span>IATA</span>
+              </a>
+              <a href="https://drive.google.com/file/d/1SXueoSRs_-DWuFOUpSkaAPFTFfsgVhpn/view?usp=sharing">
+                <span>Project Report</span>
+              </a>
+
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="img-box"><img src="static\main_business_insight\iata_demo.png" alt=""></div>
+        </div>
+  </div>
+  
+  <div class="top-banner-box-type-1-between-pad"></div>
+
+
+  
+
+
+<!-- portfolio 2 -->
+  <div class="top-banner-box-3 top-banner-box-type-1 con">
+    <div>
+      <img src="static\main_business_insight\dva_demo.png" alt="DVA Demo" style="margin-left:20px; width:40%;">
+      <div class="txt-box">
+        <h1>
+          Stock Price Prediction using BERT and LSTM
+        </h1>
+        <h2>
+            Georgia Tech Data and Visual Analytics
+        </h2>
+        <div class="des">
+          The goal of this project was to predict the stock price with regard to the emotional magnitude of the social media discussion.
+          <br>
+        </div>
+        <!-- <div class="btn-box">
+          <a href="https://www.iata.org/">
+            <span>IATA</span>
+          </a>
+        </div> -->
+      </div>
+    </div>
+</div>
+
+  <div class="top-banner-box-type-1-between-pad"></div>
+
+
+
+
+
+
+
+
+
+
+
+  
+ 
+  
+  <div class="bottom-bar con-min-width">
+    <div class="con">
+      <div class="box-1">
+        <nav class="menu-box-1">
+        </nav>
+      </div>
+      <div class="box-2 flex">
+        <a  class="rep-contact strong black">Published by Hazel Yeom</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

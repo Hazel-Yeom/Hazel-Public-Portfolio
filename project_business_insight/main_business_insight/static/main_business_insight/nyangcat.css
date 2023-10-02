@@ -1,0 +1,203 @@
+body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: whitesmoke;
+}
+
+.window {
+  position: relative;
+  padding: 20px;
+  border: 4px solid #808080;
+  border-radius: 48px;
+  background-color: #D9D9D9;
+  box-shadow: 
+    inset 0 0 80px rgba(0, 0, 0, 0.2),
+    0 0 0 40px whitesmoke,
+    0 0 0 44px #808080,
+    0 20px 40px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.window:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: black;
+  opacity: 0.2;
+  filter: blur(10px);
+  pointer-events: none;
+  z-index: 20;
+}
+
+.top {
+  position: absolute;
+  left: 0;
+  top: -90%;
+  width: 100%;
+  height: 100%;
+  border-radius: 48px;
+  background: whitesmoke;
+  box-shadow: 
+    0 0 0 4px #808080,
+    0 0 30px rgba(0, 0, 0, 0.4);
+  transition: 0.6s all ease-in-out;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.top:before {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 8px;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  background-color: #808080;
+}
+
+.top:after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 8px;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  background-image: radial-gradient(#5DF254, #42a73f);
+  animation: light 1s ease infinite;
+}
+
+.glass {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  border-radius: 72px;
+  box-shadow: 0 0 0 4px #808080;
+  overflow: hidden;
+}
+
+.glass:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: radial-gradient(circle farthest-corner at 90% 10%, rgba(255, 255, 255, 0.4) 0%, transparent 20%);
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.2);
+  border-radius: 72px;
+}
+
+.sky {
+  position: relative;
+  background: #3FA9F5;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.nyan-cat {
+  position: absolute;
+  top: 40%;
+  width: 90px;
+  height: 60px;
+  background-image: url('https://media.tenor.co/images/b0dacd0bb277315b8582d2d0e07d62a8/tenor.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: leftToRight 5s linear 1s infinite;
+  z-index: -10;
+}
+
+.cloud {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  border-radius: 40px;
+  animation: leftToRight 2s linear infinite;
+}
+
+.cloud:before, 
+.cloud:after {
+  content: " ";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+}
+
+.cloud:before {
+  top: -20px;
+  left: 20px;
+}
+
+.cloud:after {
+  top: -10px;
+  left: 50px;
+}
+
+.cloud:nth-child(1) {
+  animation-duration: 8s;
+}
+
+.cloud:nth-child(2) {
+  top: 20%;
+  animation-delay: 0.2s;
+  animation-duration: 6s;
+}
+
+.cloud:nth-child(3) {
+  top: 40%;
+  animation-duration: 4s;
+}
+
+.cloud:nth-child(4) {
+  top: 60%;
+  animation-duration: 6s;
+}
+
+.cloud:nth-child(5) {
+  top: 20%;
+  transform: scale(3);
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+.cloud:nth-child(6) {
+  top: 20%;
+  transform: scale(2);
+  animation-duration: 4s;
+}
+
+@keyframes leftToRight {
+  0% {
+    left: -200%;
+  }
+  100% {
+    left: 150%;   
+  }
+}
+
+@keyframes light {
+  0% {
+    box-shadow: 0 0 0px #5DF254;
+  }
+  50% {
+    box-shadow: 0 0 20px #5DF254;
+  }
+  80% {
+    box-shadow: 0 0 40px rgba(93, 242, 84, 0.0);
+  }
+}

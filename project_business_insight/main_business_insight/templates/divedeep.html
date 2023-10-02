@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<script src="https://www.amcharts.com/lib/3/amcharts.js?x"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js?x"></script>
+<script src="https://www.amcharts.com/lib/3/themes/dark.js"></script>
+
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'main_business_insight/divedeep.css' %}">
+<script src="{% static 'main_business_insight/divedeep.js' %}"></script>
+
+
+
+
+
+
+<!-- <div id="chartdiv"></div>  -->
+<div id="chartdiv" class="mt-20"></div>
+
+
+{% endblock %}
