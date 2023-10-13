@@ -1,6 +1,6 @@
 ##### Last Update 2023-10-02
 ---
-| No. | Institution | Project Title | Link | Status |
+| No. | Institution | Project | Link | Status |
 |-----------|-----------|-----------|-----------|-----------|
 | 1 | Georgia Tech & IATA | NLP Project Report | [Final Report](https://drive.google.com/file/d/1SXueoSRs_-DWuFOUpSkaAPFTFfsgVhpn/view) | COMPLETE |
 | 2 | Georgia Tech | Stock Price Prediction - Presentation | [Youtube](https://youtu.be/suWANYxdGC0) | COMPLETE |
