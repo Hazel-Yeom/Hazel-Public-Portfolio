@@ -7,9 +7,9 @@ This product consists of three parts in addition to the csv data file
 
 
 === INSTALLATION ===
-The user can download the above 4 files mentioned in the description in the same directory or folder.
-Then the user can run the python flask server from the directory where the downloded contents exist.
-Finally the user can natigate to the target directory from the local server.
+The user can download above 4 files mentioned from the description.
+Then the user can run the python flask server from the root directory.
+Finally the user can navigate to the local server.
 The user might need to install the necessary versions of Apexcharts or d3.js library depending on the local environment.
 
 
